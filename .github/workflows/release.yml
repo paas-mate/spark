@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: build push spark
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: ./spark
           file: spark/Dockerfile
